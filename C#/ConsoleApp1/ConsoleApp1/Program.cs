@@ -130,12 +130,65 @@ namespace ConsoleApp1
             //OverflowException例外が発生するようになる
             //   int overerror = int.MaxValue;
             //  Console.WriteLine(overerror + 1);
-           // }
+            // }
 
 
             //例外処理
-            //try catch throw
+            /// <summary>
+            /// try
+            /// {
+            ///     if(エラーが発生したら){
+            ///         throw new Exception("Message・・・");
+            ///     }
+            /// } 
+            /// 
+            /// catch
+            /// {
+            ///     例外を受け取る
+            /// }
+            /// 
+            /// finally
+            /// {
+            ///     //例外の有無に限らず実行
+            /// }
+            /// 
+            /// </summary>
 
+            //クラス
+        class Animal
+        {
+            public string type;
+            //コンストラクタ
+            public Animal(string type)
+            {
+                this.type = type;
+            }
+
+            //クラス名のメソッドはファイナライザとして呼び出される
+            ~Animal()
+            {
+                //廃棄時の処理
+            }
+
+        }
+
+        //インスタンスを生成
+        Animal a1 = new Animal("dog");
+        
+
+               //構造体
+        struct Point
+        {
+            public int x, y;
+            
+            public Point(int x, int y)
+            {
+                this.x = x;
+                this.y = y;
+            }
+        }
+
+        Point p1 = new Point(100, 200);
 
 
 

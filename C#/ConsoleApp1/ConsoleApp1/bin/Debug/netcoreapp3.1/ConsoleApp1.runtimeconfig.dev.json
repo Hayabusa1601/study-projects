@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\hirot\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\hirot\\.nuget\\packages"
+    ]
+  }
+}
